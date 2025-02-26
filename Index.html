@@ -3,56 +3,165 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome!</title>
+    <title>John Doe - .NET Developer Portfolio</title>
     <style>
         body {
-            font-family: sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
+            padding: 0;
+            line-height: 1.6;
             background-color: #f4f4f4;
-        }
-
-        .div.welcome-container {
-            text-align: center;
-            padding: 40px;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        h1 {
             color: #333;
-            margin-bottom: 20px;
         }
 
-        p {
-            color: #666;
-            margin-bottom: 30px;
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
         }
 
-        .a.button {
-            display: inline-block;
-            padding: 12px 24px;
-            background-color: #007bff;
-            color: white;
+        header {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        section {
+            padding: 2rem 0;
+        }
+
+        section h2 {
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            display: block;
+            margin: 1rem auto;
+        }
+
+        .experience, projects, skills {
+            margin-bottom: 2rem;
+        }
+
+        .experience-item, project-item {
+            margin-bottom: 1rem;
+            padding: 1rem;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .skill-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .skill-item {
+            background-color: #e0e0e0;
+            padding: 0.5rem 1rem;
+            margin: 0.5rem;
+            border-radius: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background: #333;
+            color: #fff;
+        }
+
+        a {
+            color: #007bff;
             text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
         }
 
-        .button:hover {
-            background-color: #0056b3;
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <div class="welcome-container">
-        <h1>Welcome to Our Site!</h1>
-        <p>Thank you for visiting. We're glad you're here.</p>
-        <a href="#" class="button">Get Started</a>
-    </div>
+    <header>
+        <div class="container">
+            <h1>John Doe - .NET Developer</h1>
+        </div>
+    </header>
+
+    <section id="profile">
+        <div class="container">
+            <img src="placeholder-profile.jpg" alt="John Doe" class="profile-img">
+            <h2>About Me</h2>
+            <p>Highly motivated .NET developer with 5 years of experience in designing, developing, and maintaining robust and scalable applications. Proficient in C#, ASP.NET Core, Entity Framework, and SQL Server. Passionate about writing clean, efficient code and staying up-to-date with the latest technologies.</p>
+        </div>
+    </section>
+
+    <section id="experience">
+        <div class="container">
+            <h2>Experience</h2>
+            <div class="experience-item">
+                <h3>Senior .NET Developer</h3>
+                <p>ABC Company | 2020 - Present</p>
+                <p>Developed and maintained web applications using ASP.NET Core and Entity Framework. Implemented RESTful APIs and integrated with third-party services. Led a team of junior developers and mentored them on best practices.</p>
+            </div>
+            <div class="experience-item">
+                <h3>.NET Developer</h3>
+                <p>XYZ Corporation | 2018 - 2020</p>
+                <p>Worked on various projects involving C#, ASP.NET MVC, and SQL Server. Designed and implemented database schemas and optimized query performance.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-item">
+                <h3>E-commerce Platform</h3>
+                <p>Developed a scalable e-commerce platform using ASP.NET Core and Angular. Integrated payment gateways and implemented user authentication and authorization.</p>
+                <a href="#">GitHub Repository</a>
+            </div>
+            <div class="project-item">
+                <h3>Inventory Management System</h3>
+                <p>Created an inventory management system using C# and WPF. Implemented features for tracking inventory levels, generating reports, and managing orders.</p>
+                <a href="#">GitHub Repository</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul class="skill-list">
+                <li class="skill-item">C#</li>
+                <li class="skill-item">ASP.NET Core</li>
+                <li class="skill-item">Entity Framework</li>
+                <li class="skill-item">SQL Server</li>
+                <li class="skill-item">RESTful APIs</li>
+                <li class="skill-item">Angular</li>
+                <li class="skill-item">WPF</li>
+                <li class="skill-item">Git</li>
+                <li class="skill-item">Azure</li>
+                <li class="skill-item">Docker</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 John Doe | <a href="mailto:john.doe@example.com">john.doe@example.com</a></p>
+        </div>
+    </footer>
 </body>
 </html>
